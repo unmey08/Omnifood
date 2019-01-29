@@ -15,6 +15,16 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
@@ -35,6 +45,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -128,7 +139,6 @@ h3 {
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
-    margin-bottom: 20px;
 }
 
 .box p {
@@ -136,6 +146,10 @@ h3 {
     line-height: 145%;
     word-spacing: 1px;
     text-align: justify;
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
 }
 
 /*------------------ICONS--------------------*/
@@ -146,6 +160,25 @@ h3 {
     color: #e67e22;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.city-feature i {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -6px;
+    margin-right: 5px;
+}
+
+*------------------LINKS--------------------*/
+
+a:hover, a:active {
+    color: #e67e22;
+    border-bottom: 1px solid transparent;
 }
 
 /*------------------BUTTONS--------------------*/
@@ -188,6 +221,193 @@ btn-full:hover, .btn-full:active {
 
 /*------------------------MEALS------------------------*/
 
+.section-meals {
+    padding: 0;
+}
+
 .meals-showcase {
     list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.7;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/*-------------HOW IT WORKS----------*/
+
+.section-steps {
+    background-color: #f2f2f2;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 90px;
+}
+
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+} 
+
+/*---------CITIES--------*/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/*-------TESTIMONIALS-------*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*---------PLANS--------*/
+
+.section-plans {
+    background-color: #f2f2f2;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px; 
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box i {
+    color: #e67e22;
+    padding-right: 10px;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.plan-box div:first-child {
+    background-color: rgb(245, 245, 245);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: none;
+}
+
+.plan_price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan_price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan ul li {
+    padding: 5px 0;
 }
