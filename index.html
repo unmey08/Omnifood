@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
@@ -36,7 +37,7 @@
         <div class="row">
             <h2>Get food fast &mdash; not fast food</h2>
             <p class="long-copy">
-                Hello, we’re Omnifood, your new premium food delivery service. We know you’re always <br>busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+                Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
             </p>
         </div>
         
@@ -279,8 +280,9 @@
                     <div>
                         <ul>
                             <li><i class="icon ion-md-checkmark"></i>1 meal</li>
-                            <li><i class="icon ion-md-checkmark"></i>Order from 8 am to 12 pm</li>
-                            <li><i class="icon ion-md-close"></i>Access to newest creations</li>
+                            <li><i class="icon ion-md-checkmark"></i>Order from 8am to 12pm</li>
+                            <li><i class="icon ion-md-close"></i>Access to newest creations
+                            </li>
                             <li><i class="icon ion-md-checkmark"></i>Free delivery</li>
                         </ul>
                     </div>
@@ -320,6 +322,7 @@
                     </div>
                     <div class="col span-2-of-3">
                         <select name="find-us" id="find-us">
+                            <option value="empty" disabled selected></option>
                             <option value="friends" selected>Friends</option>
                             <option value="internet">Internet</option>
                             <option value="newspaper">Newspaper</option>
@@ -382,7 +385,10 @@
         </div>
     </footer>
     
+    <script src="resources/js/script.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
+
+
