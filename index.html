@@ -3,14 +3,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omnifood</title>
+    <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible">
+    
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    
+    <title>Omnifood</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -18,22 +32,25 @@
        <nav>
            <div class="row">
                <img src="resources/img/logo-white.png" alt="Logo" class="logo">
+               <img src="resources/img/logo.png" alt="Logo" class="logo-black">
                <ul class="main-nav">
-                   <li><a href="#">Food Delivery</a></li>
-                   <li><a href="#">How it works</a></li>
-                   <li><a href="#">Our cities</a></li>
-                   <li><a href="#">Sign up</a></li>
+                   <li><a href="#features">Food Delivery</a></li>
+                   <li><a href="#works">How it works</a></li>
+                   <li><a href="#cities">Our cities</a></li>
+                   <li><a href="#plans">Sign up</a></li>
                </ul>
+               <a class="mobile-nav-icon"><i class="icon ion-ios-menu"></i>
+</a>
            </div>
        </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-            <a href="#" class="btn btn-full">I'm hungry</a>
-            <a href="#" class="btn btn-ghost">Show me more</a>
+            <a href="#" class="btn btn-full js--scroll-to-plans">I'm hungry</a>
+            <a href="#" class="btn btn-ghost js--scroll-to-start">Show me more</a>
         </div>
     </header>
     
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food</h2>
             <p class="long-copy">
@@ -41,7 +58,7 @@
             </p>
         </div>
         
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <i class="icon ion-ios-infinite icon-big"></i>
                 <h3>Up to 365 days/year</h3>
@@ -112,13 +129,13 @@
         </ul>
     </section>
     
-    <section class="section-steps">
+    <section class="section-steps" id="works">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>    
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/img/app-iPhone.png" alt="Omnifood iPhone app" class="app-screen">
+                <img src="resources/img/app-iPhone.png" alt="Omnifood iPhone app" class="app-screen js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -139,8 +156,8 @@
         </div>
     </section>
     
-    <section class="section-cities">
-        <div class="row">
+    <section class="section-cities" id="cities">
+        <div class="row js--wp-3">
             <h2>We're currently in these cities</h2>
         </div>
         <div class="row">
@@ -225,13 +242,13 @@
         </div>
     </section>
     
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan_price">$399<span>per month</span></p>
@@ -321,8 +338,8 @@
                         <label for="find-us">How did you find us?</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <select name="find-us" id="find-us">
-                            <option value="empty" disabled selected></option>
+                        <select name="find-us" id="find-us" multiple>
+                            <option value="empty" disabled selected label="empty"></option>
                             <option value="friends" selected>Friends</option>
                             <option value="internet">Internet</option>
                             <option value="newspaper">Newspaper</option>
@@ -385,9 +402,11 @@
         </div>
     </footer>
     
-    <script src="resources/js/script.js"></script>
+    
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>
 </html>
 
